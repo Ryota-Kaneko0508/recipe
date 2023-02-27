@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="mt-5 d-grid gap-2 col-6 mx-auto">
+    <button type="button" class="btn btn-outline-primary"><a href="{{ url_for('food_recipe') }}">材料からレシピ検索</a></button>
+    <button type="button" class="btn btn-outline-secondary"><a href="{{ url_for('recipe_food') }}">料理名から買い物リスト</a></button>
+</div>
+{% endblock %}

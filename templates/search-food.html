@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="container mt-5">
+        <a class="btn btn-primary mb-5" href="{{ recipe_url }}" role="button">{{ cooking }}のレシピページへ</a>
+        <table class="table">
+            <thead>
+                <th scope="col">材料</th>
+                <th scope="col">チェックリスト</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for material in materials %}
+            <tr>
+                <td>{{ material }}</td>
+                <td><input class="form-check-input bg-secondary" type="checkbox"></td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

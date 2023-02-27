@@ -1,0 +1,8 @@
+CREATE TABLE recipe (
+        id INTEGER NOT NULL,
+        recipe_title VARCHAR,
+        recipe_url VARCHAR,
+        food_image_url VARCHAR,
+        recipe_material VARCHAR,
+        PRIMARY KEY (id)
+);

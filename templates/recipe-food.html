@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+    <p>料理名を入力してください</p>
+    <form method="POST">
+        <div class="mb-3">
+            <label for="cooking" class="form-label">料理名</label>
+            <input type="text" class="form-control" id="cooking" name="cooking">
+        </div>
+        <div class="mb-3">
+            <button type="submit" class="btn btn-primary">検索</button>
+        </div>
+    </form>
+</div>
+{% endblock %}
