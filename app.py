@@ -1,6 +1,7 @@
 from flask import Flask, render_template, redirect, request, g
 import sqlite3
 
+# データベースの名前を格納
 DATABASE="recipe.db"
 
 app = Flask(__name__)
